@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".QuestionActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Who wrote 'Where ignorance is bliss, it is folly to be wise'?"
+        android:textSize="35sp"
+        android:padding="10dp"
+        android:id="@+id/qua"
+        android:textColor="@color/black"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="7"
+
+            android:minHeight="10dp"
+            android:progress="0"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0/7"
+    android:textSize="10sp"
+    android:layout_marginLeft="2dp"
+    android:textColor="@color/black"
+    android:id="@+id/progressDisplay"
+
+    />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+    <TextView
+android:background="@drawable/background"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browning"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:id="@+id/option1"
+android:gravity="center_horizontal"
+        android:textColor="@color/black"
+       />
+    <TextView
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marx"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/option2"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shakespeare"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/option3"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:background="@drawable/background"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kipling"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:id="@+id/option4"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+       />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textSize="25sp"
+        android:id="@+id/submit"
+        android:background="@color/purple_700"
+        android:text="SUBMIT"/>
+</LinearLayout>
+</ScrollView>
